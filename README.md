@@ -41,6 +41,21 @@ public class StudentRegister {
                         System.out.println("Student " + nameToDelete + " deleted successfully.");
                     } else {
                         System.out.println("Student " + nameToDelete + " not found.");
+                case 4:
+                    System.out.println("Enter student ID to delete:");
+                    String idToDelete = input.nextLine();
+                    if (deleteStudentById(studentList, idToDelete)) {
+                        System.out.println("Student with ID " + idToDelete + " deleted successfully.");
+                    } else {
+                        System.out.println("Student with ID " + idToDelete + " not found.");
+                    }
+                    break;
+                case 5:
+                    System.out.println("Thank you for using the Student Register!");
+                    return;
+                default:
+                    System.out.println("Invalid option, please try again.");
+                    break;
                     }
 
 
