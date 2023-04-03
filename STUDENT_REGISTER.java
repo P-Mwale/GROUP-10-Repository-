@@ -37,6 +37,22 @@ public class StudentRegister {
                     System.out.println("Student added successfully.");
                     System.out.println(" ");
                     break; 
+                case 2:
+                    System.out.println("Student List:");
+
+                    for (Student s : studentList) {
+                        System.out.println("Name: " + s.getName() + ", ID: " + s.getId() + ", Major: " + s.getMajor());
+                    }
+                    break;
+                case 3:
+                    System.out.println("Enter student name to delete:");
+                    String nameToDelete = input.nextLine();
+                    if (deleteStudentByName(studentList, nameToDelete)) {
+                        System.out.println("Student " + nameToDelete + " deleted successfully.");
+                    } else {
+                        System.out.println("Student " + nameToDelete + " not found.");
+                    }
+                    break;
 
 
 
