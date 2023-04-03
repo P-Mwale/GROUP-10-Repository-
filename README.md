@@ -12,6 +12,8 @@ public class StudentRegister {
 
         System.out.println("Welcome to the Student Register!");
 
+        
+
         while (true) {
             System.out.println("Please select an option:");
             System.out.println("1. Add Student");
@@ -23,20 +25,9 @@ public class StudentRegister {
             int choice = input.nextInt();
             input.nextLine(); // consume newline character
 
-            switch (choice) {    System.out.println("Welcome to the Student Register!");
-
-    while (true) {
-        System.out.println("Please select an option:");
-        System.out.println("1. Add Student");
-        System.out.println("2. View Student List");
-        System.out.println("3. Delete Student by Name");
-        System.out.println("4. Delete Student by ID");
-        System.out.println("5. Exit");
-
-        int choice = input.nextInt();
-        input.nextLine(); // consume newline character
-
-        switch (choice) {case 2:
+            switch (choice) {
+    
+                case 2:
                     System.out.println("Student List:");
 
                     for (Student s : studentList) {
