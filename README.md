@@ -42,19 +42,7 @@ public class StudentRegister {
                     } else {
                         System.out.println("Student " + nameToDelete + " not found.");
                     }
-
-
-
-        }
-  
-  
-  
-            }
-    
-  
-  }
-}  
-case 4:
+                 case 4:
                     System.out.println("Enter student ID to delete:");
                     String idToDelete = input.nextLine();
                     if (deleteStudentById(studentList, idToDelete)) {
@@ -69,3 +57,13 @@ case 4:
                 default:
                     System.out.println("Invalid option, please try again.");
                     break;
+
+
+
+        }
+
+    
+  
+  }
+}  
+            
