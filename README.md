@@ -25,23 +25,22 @@ public class StudentRegister {
 
             switch (choice) {
 
+                case 1:
+                        System.out.println("Enter student name:");
+                        String name = input.nextLine();
 
-  case 1:
-                    System.out.println("Enter student name:");
-                    String name = input.nextLine();
+                        System.out.println("Enter student ID:");
+                        String id = input.nextLine();
 
-                    System.out.println("Enter student ID:");
-                    String id = input.nextLine();
+                        System.out.println("Enter student major:");
+                        String major = input.nextLine();
 
-                    System.out.println("Enter student major:");
-                    String major = input.nextLine();
+                        Student student = new Student(name, id, major);
+                        studentList.add(student);
 
-                    Student student = new Student(name, id, major);
-                    studentList.add(student);
+                        System.out.println("Student added successfully.");
+                        break;
 
-                    System.out.println("Student added successfully.");
-                    break;
-  
   
             }
     
