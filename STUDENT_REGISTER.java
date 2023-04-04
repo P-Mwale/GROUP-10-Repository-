@@ -68,8 +68,29 @@ public class StudentRegister {
                 default:
                     System.out.println("Invalid option, please try again.");
                     break;
+                }
+        }
+        
+        
+    }
+     public static boolean deleteStudentByName(ArrayList<Student> studentList, String name) {
+        for (Student s : studentList) {
+            if (s.getName().equalsIgnoreCase(name)) {
+                studentList.remove(s);
+                return true;
             }
         }
+        return false;
+    }
+
+    public static boolean deleteStudentById(ArrayList<Student> studentList, String id) {
+        for (Student s : studentList) {
+            if (s.getId().equalsIgnoreCase(id)) {
+                studentList.remove(s);
+                return true;
+            }
+        }
+        return false;
     }
 
 
