@@ -70,9 +70,7 @@ public class StudentRegister {
                     break;
                 }
         }
-        
-        
-    }
+ }
      public static boolean deleteStudentByName(ArrayList<Student> studentList, String name) {
         for (Student s : studentList) {
             if (s.getName().equalsIgnoreCase(name)) {
